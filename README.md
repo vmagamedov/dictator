@@ -34,12 +34,11 @@ and decoded pythonic values.
 Classes in Python has two interesting methods: `__new__` and `__init__`.
 
 `__new__` method of the schema classes is responsible in decoding of input
-values, and if value can be decoded, instance will be created. Schema instances
-creation is done from top level element to the all nested elements, while
-decoding is possible.
-
-Then, when all possible instances were created in top-down fashion, validation
-process is started using bottom-up strategy in the `__init__` method.
+values. Schema instances creation is done from the top level element to the
+all nested elements, while decoding is possible. Then, when all possible
+instances were created in top-down fashion, validation process is started
+using bottom-up strategy in the `__init__` method for all those elements,
+which were successfully decoded.
 
 Input data structure is considered valid, obviously, when all validated nested
 elements are also valid.

@@ -1,6 +1,6 @@
 # Dictator
 
-Data validation library
+Structured data validation library
 
 ### Why another validation library?
 

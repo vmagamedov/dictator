@@ -42,3 +42,7 @@ which were successfully decoded.
 
 Input data structure is considered valid, obviously, when all validated nested
 elements are also valid.
+
+### API docs
+
+Please look for docstrings in the source code.
